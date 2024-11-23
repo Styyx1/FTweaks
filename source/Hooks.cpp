@@ -96,12 +96,8 @@ namespace Tweaks
         {
             if (!player->IsInMidair()) {
                 player->GetCharController()->jumpHeight *= height_mod;
-                player->GetCharController()->fallStartHeight *= height_mod;
-                player->GetCharController()->fallTime *= height_mod;
-
                 return true;
             }
-
             return false;
         }
         static void InstallPlayerUpdate()
